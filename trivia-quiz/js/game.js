@@ -73,22 +73,22 @@ const setTheme = (topic) => {
   switch (topic) {
     case "Music":
       accentColor = "230, 73, 128";
-      backgroundUrl = "url('../assets/music_big.jpg')";
+      backgroundUrl = "url('./assets/music_big.jpg')";
       break;
 
     case "History":
       accentColor = "252, 196, 25";
-      backgroundUrl = "url('../assets/history_big.jpg')";
+      backgroundUrl = "url('./assets/history_big.jpg')";
       break;
 
     case "Geography":
       accentColor = "130, 201, 30";
-      backgroundUrl = "url('../assets/geography_big.jpg')";
+      backgroundUrl = "url('./assets/geography_big.jpg')";
       break;
 
     case "Science":
       accentColor = "51, 154, 240";
-      backgroundUrl = "url('../assets/science_big.jpg')";
+      backgroundUrl = "url('./assets/science_big.jpg')";
   }
 
   setCssProperty("--accent-color", `rgba(${accentColor}, 1)`);
