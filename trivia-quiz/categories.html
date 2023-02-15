@@ -21,27 +21,39 @@
   </head>
   <body>
     <header>
-      <a href="#" class="logo">Trivia<span>Quiz</span></a>
+      <a href="./index.html" class="logo">Trivia<span>Quiz</span></a>
       <nav>
         <a href="https://github.com/Mikic32/trivia-quiz">GitHub</a>
         <a href="#">Contact Me</a>
       </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="home-textbox">
-          <h1>Test your trivia expertise with this Quiz!</h1>
-          <p>
-            Put your knowlage to the test, select up to 4 topics for the quiz,
-            the topics include Music, History, Geography and Science. Then
-            select the difficulty level. You will answer 5 multiple choice
-            questions based on the topics you selected.
-          </p>
-          <a href="./categories.html" class="btn">GET STARTED</a>
+      <div class="card">
+        <h2>Please select your topics*</h2>
+        <div class="topics-container">
+          <div class="topic">Music</div>
+          <div class="topic">History</div>
+          <div class="topic">Geography</div>
+          <div class="topic">Science</div>
         </div>
-        <div class="home-image"></div>
+        <h2>Select dificulty level</h2>
+        <div class="dificulty-container">
+          <div class="dificulty-seetting setting-active">
+            <figure class="smiley easy"></figure>
+            <span>Easy</span>
+          </div>
+          <div class="dificulty-seetting">
+            <figure class="smiley medium"></figure>
+            <span>Medium</span>
+          </div>
+          <div class="dificulty-seetting">
+            <figure class="smiley hard"></figure>
+            <span>Hard</span>
+          </div>
+        </div>
+        <button id="submit" class="btn btn-big">Play!</button>
       </div>
-      <div class="wave">
+      <div class="wave2">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -55,5 +67,6 @@
         </svg>
       </div>
     </main>
+    <script src="./js/index.js"></script>
   </body>
 </html>
